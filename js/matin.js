@@ -62,7 +62,7 @@ async function displayData() {
       let forecastDay = forecastContainer.forecast.forecastday;
       let curentNameDay = weekDays[getWeekDay(forecastDay[0].date).getDay()];
       let curentDayMonth = months[getWeekDay(forecastDay[0].date).getMonth()];
-      let curentMonthNum = getWeekDay(forecastDay[0].date).getMonth();
+      let curentMonthNum = new Date().getDate();
       let nextNameDay = weekDays[getWeekDay(forecastDay[1].date).getDay()];
       let latestNameDay = weekDays[getWeekDay(forecastDay[2].date).getDay()];
       forecastContaciner.innerHTML = `
